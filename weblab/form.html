@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" href="style.css">	
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<title> ФТІ </title>
+</head>
+<body class="body">
+<header class="hfhf">
+	<img id="logo" src="assets/logo.png">
+	<h1>Фізико-Технічний Інститут</h1>
+	<nav>
+		<ul class="topmenu">
+			<li><a href="index.html">Головна</a></li>
+			<li><a href="form.html">Реєстрація</a></li>
+			<li><a href="" class="submenu-link">Інше</a>
+				<ul class="submenu">
+					<li><a href="http://ipt.kpi.ua/istoriya">Історія ФТІ</a></li>
+					<li><a href="http://ipt.kpi.ua/navchalnij-protses">Розклад</a></li>
+					<li><a href="http://ipt.kpi.ua/vstup-na-1-kurs">Абітурієнтам</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+</header>
+<body>
+	<form class="form" method="GET">
+		<legend>Форма реєстрації випускників</legend>
+		<p>
+			<label for="fname">Ім'я:</label>
+			<input type="text" name="fname" placeholder="Введіть ім'я" pattern="^[а-яА-ЯЁёІіЇїЄє]+$" title="Літери алфавіту від А(а) до Я(я)" required><br><br>
+		</p>
+		<p>
+			<label for="lname">Прізвище:</label>
+			<input type="text" name="lname" placeholder="Введіть прізвище" pattern="^[а-яА-ЯЁёІіЇїЄє]+$" title="Літери алфавіту від А(а) до Я(я)" required><br><br>
+		</p>
+		<p>
+			<label for="spec">Спеціальність:</label>
+			<select name="spec">
+				<option>Прикладна фізика</option>
+				<option>Прикладна математика</option>
+				<option>Кібербезпека</option>
+			</select><br><br>
+		</p>
+		<p>
+			<label for="email">Email:</label>
+			<input type="email" name="email" placeholder="Введіть Email" required><br><br>
+		</p>
+		<p>
+			<label for="pwd">Пароль:</label>
+			<input type="password" name="pwd" placeholder="Введіть пароль" required><br><br>
+		</p>
+		<p><label><input type="checkbox" name="terms" required>Я надаю згоду на обробку персональних даних</label></p>
+		<p><input type="submit" value="Реєстрація"></p>	
+	</form>
+	<div id="dialog">
+		<p>Уважно заповнюйте форму!<br> Ім'я та прізвище - літери українського алфавіту. <br>Далі оберіть спеціальність, введіть Email та придумайте надійний пароль.</p>
+	</div>
+<footer class="hfhf">
+		<a href="https://t.me/smchnk1">Сьомченко Дмитро ФБ-92</a>
+</footer>
+</body>
+</html>

@@ -1,0 +1,116 @@
+/* used for both files */
+.hfhf {
+    background-color: #61d195;
+    border: 2px solid;
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+#logo {
+    height: 120px;
+    background-color: #5B7573;
+    border-radius: 100px;
+    margin: 10px 10px 0 10px;
+}
+.body {
+    background-color: #fff6dd;
+    font-family: 'Roboto', sans-serif;
+}
+header a {
+    text-decoration: none;
+    display: block;
+    transition: .3s ease-in-out;
+}
+footer a {
+    text-decoration: none;
+}
+nav {
+    display: table;
+    margin: 0 auto;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.topmenu > li {
+    width: 1/3;
+    float: left;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+.topmenu > li > a {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: #404040;
+    padding: 0px 30px 15px;
+}
+.topmenu li a:hover { color: #D5B45B; }
+.submenu {
+    background: #273037;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 5;
+    width: 180px;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    transition: .3s ease-in-out;
+}
+.submenu a {
+    color: white;
+    text-align: left;
+    padding: 12px 15px;
+    font-size: 13px;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+}
+.submenu li:last-child a { border-bottom: none; }
+.topmenu > li:hover .submenu {
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+/* used for index.html */
+.grad {
+    text-align: center;
+}
+.grad > table {
+    width: 100%;
+}
+.tdwide {
+    width: 70%;
+}
+.tdnarrow {
+    text-align: center;
+    width: 30%;
+}
+.tdnarrow > img {
+    width: 180px;
+    height: 180px;
+    border-radius: 20px;
+}
+.tdnarrow > img::after {
+    width: 70%;
+}
+
+/* used for form.html */
+.form {
+    text-align: center;
+}
+.form > legend {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+input {
+    border: 1px solid;
+    border-radius: 5px;
+}
+#dialog {
+    background-color: lightcoral;
+    border-radius: 20px;
+    margin: 0 auto;
+    text-align: center;
+    width: 30%;
+}
